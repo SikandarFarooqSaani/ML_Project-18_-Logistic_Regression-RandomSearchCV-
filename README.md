@@ -2,7 +2,7 @@
 ============================================================
 
 
-📌 Project Overview
+📌 ###  *Project Overview*
 
 This project aims to predict the risk of heart disease in the next 10 years using the Framingham Heart Study dataset from Kaggle.We use Logistic Regression as the primary model, handle missing values, perform feature selection, and apply RandomizedSearchCV for hyperparameter tuning.  
 🔗 Dataset Link: Heart Disease Prediction - Kaggle
