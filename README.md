@@ -61,9 +61,10 @@ Accuracy: 0.833
 Confusion Matrix:  
 ✅ Correctly predicted many cases  
 ❌ 141 False Negatives → Struggles to detect positive heart disease cases
-<img width="649" height="547" alt="18-1" src="https://github.com/user-attachments/assets/bc7cb554-ac64-45e0-ad99-f780f8860ba1" />
 
- 
+
+
+📊 (Confusion Matrix image attached in repo)  
 4. Hyperparameter Tuning (RandomizedSearchCV)
 param_dist = {
     'penalty': ['l1', 'l2', 'elasticnet'],
@@ -91,7 +92,6 @@ Selected Top 10 Features
 Logistic Regression accuracy: 0.8337  
 RandomizedSearchCV tuned model accuracy: 0.85  
 (Confusion Matrix shows accuracy is misleading due to imbalance)
-<img width="649" height="547" alt="18-2" src="https://github.com/user-attachments/assets/22f66d77-251e-45da-8b89-e9a470fa5994" />
 
 
 Reduced to Top 7 Features  
@@ -100,7 +100,7 @@ Retrained model with 7 features
 Accuracy improved slightly  
 RandomizedSearchCV best score: 0.853  
 Params: C=0.09, penalty=l2, solver=saga, l1_ratio=0.9
-<img width="649" height="547" alt="18-3" src="https://github.com/user-attachments/assets/b59fcc40-08e9-4e81-a0d4-d93c2a964e1b" />
+
 
 
 
@@ -151,11 +151,13 @@ Top 7
 L2, C=0.09
 
 
+
 📉 Limitations
 
 ⚠️ Dataset is imbalanced, model misses positive cases (false negatives)  
 High accuracy but low recall for minority class (Heart Disease)  
 Logistic Regression may not be the best for imbalanced medical data
+
 
 🚀 Next Steps
 
@@ -163,11 +165,13 @@ Try Decision Tree, Random Forest, XGBoost
 Apply SMOTE (Oversampling) for balancing data  
 Evaluate using Precision, Recall, F1-Score, ROC-AUC instead of just accuracy
 
+
 📌 Conclusion
 
 Logistic Regression gives ~85% accuracy  
 Feature selection + tuning improves performance  
 Still, false negatives remain a big problem → critical in healthcare predictions
+
 
 🖼️ Visualizations
 
@@ -176,12 +180,14 @@ Confusion Matrix (Feature Selected)
 Accuracy Comparison Graphs
 
 (All plots are included in repository)  
+
 🤝 Contribution
 
 Fork 🍴 this repo  
 Create a new branch 🌿  
 Make your changes  
 Submit a Pull Request ✅
+
 
 📜 License
 This project is licensed under the MIT License
