@@ -1,11 +1,14 @@
 ❤️ Heart Disease Prediction using Logistic Regression
+============================================================
 
 
 📌 Project Overview
+
 This project aims to predict the risk of heart disease in the next 10 years using the Framingham Heart Study dataset from Kaggle.We use Logistic Regression as the primary model, handle missing values, perform feature selection, and apply RandomizedSearchCV for hyperparameter tuning.  
 🔗 Dataset Link: Heart Disease Prediction - Kaggle
 
 ⚙️ Technologies Used
+
 
 🐍 Python  
 📊 Pandas & NumPy → Data handling  
@@ -14,6 +17,7 @@ This project aims to predict the risk of heart disease in the next 10 years usin
 
 
 📂 Dataset Information
+
 
 
 
@@ -39,10 +43,15 @@ Class Distribution
 
 
 🔎 Missing Values
+
 Columns with missing values:education, cigsPerDay, BPMeds, totChol, BMI, heartRate, glucose  
-✅ Strategy: Filled with mean/mode since we cannot afford to lose data.  
+
+✅ Strategy: Filled with mean/mode since we cannot afford to lose data.
+
+
 
 🛠️ Project Workflow
+
 1. Data Preprocessing
 
 Checked dataset shape → (4238, 16)  
@@ -76,14 +85,17 @@ param_dist = {
 }
 
 5. 🔍 Results
-Best Score: 0.8355Best Params:  
 
+Best Score: 0.8355  
+Best Params:  
 C = 0.0019  
 penalty = elasticnet  
 solver = saga  
 max_iter = 500  
 class_weight = None  
 l1_ratio = 0.1
+
+
 
 6. Feature Selection (SelectKBest + Chi2)
 
@@ -105,6 +117,7 @@ Params: C=0.09, penalty=l2, solver=saga, l1_ratio=0.9
 
 
 📊 Model Performance Summary
+
 
 
 
@@ -154,12 +167,14 @@ L2, C=0.09
 
 📉 Limitations
 
+
 ⚠️ Dataset is imbalanced, model misses positive cases (false negatives)  
 High accuracy but low recall for minority class (Heart Disease)  
 Logistic Regression may not be the best for imbalanced medical data
 
 
 🚀 Next Steps
+
 
 Try Decision Tree, Random Forest, XGBoost  
 Apply SMOTE (Oversampling) for balancing data  
@@ -168,12 +183,14 @@ Evaluate using Precision, Recall, F1-Score, ROC-AUC instead of just accuracy
 
 📌 Conclusion
 
+
 Logistic Regression gives ~85% accuracy  
 Feature selection + tuning improves performance  
 Still, false negatives remain a big problem → critical in healthcare predictions
 
 
 🖼️ Visualizations
+
 
 Confusion Matrix (Baseline)  
 Confusion Matrix (Feature Selected)  
@@ -183,6 +200,7 @@ Accuracy Comparison Graphs
 
 🤝 Contribution
 
+
 Fork 🍴 this repo  
 Create a new branch 🌿  
 Make your changes  
@@ -190,4 +208,5 @@ Submit a Pull Request ✅
 
 
 📜 License
+
 This project is licensed under the MIT License
